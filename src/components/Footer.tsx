@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/custom-logo.svg" alt="Seven Billion Data" className="h-8 w-auto" />
+              <img src="/custom-logo.svg" alt="Seven Billion's Data Engine" className="h-8 w-auto" />
             </div>
             <p className="font-body text-slate-400 text-sm leading-relaxed max-w-xs">
               FMCG Decision Intelligence implementation partner. Single source of truth in 90–120 days.
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-wrap items-center justify-between gap-4">
-          <p className="font-body text-slate-500 text-xs">© 2024 Seven Billion Data. All rights reserved.</p>
+          <p className="font-body text-slate-500 text-xs">© 2024 Seven Billion's Data Engine. All rights reserved.</p>
           <p className="font-body text-slate-500 text-xs font-medium">FMCG Decision Intelligence · Built for Indian Enterprise</p>
         </div>
       </div>

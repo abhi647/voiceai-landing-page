@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="flex items-center gap-2">
-            <img src="/custom-logo.svg" alt="Seven Billion Data" className="h-8 w-auto" />
+            <img src="/custom-logo.svg" alt="Seven Billion's Data Engine" className="h-8 w-auto" />
           </div>
         </Link>
 
