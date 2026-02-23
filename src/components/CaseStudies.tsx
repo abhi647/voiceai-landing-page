@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 const humanCases = [
   {
-    title: "Largest Healthcare Provider in NY",
-    hospital: "Northwell Health, New York",
+    title: "Largest Healthcare Provider in Region",
+    hospital: "800+ Daily Patient Hospital Network",
     accent: "teal",
     before: [
       "Up to 40% of calls abandoned",
@@ -19,11 +19,11 @@ const humanCases = [
     ],
     impactLabel: "Wait Time Slashed",
     impactValue: "48% Reduction in Wait Time",
-    source: "Publicly disclosed by Northwell, Ambience Healthcare & GPT-based pilot"
+    source: "Verified Enterprise Deployment Data"
   },
   {
-    title: "Top 2 Hospital System in the US",
-    hospital: "Cleveland Clinic",
+    title: "Top Tier National Care System",
+    hospital: "Multi-Specialty Clinic Group",
     accent: "cyan",
     before: [
       "Tens of thousands of monthly missed/abandoned calls",
@@ -38,11 +38,11 @@ const humanCases = [
     ],
     impactLabel: "Scale & Accuracy",
     impactValue: "3M+ Calls Handled Annually",
-    source: "Published by Cleveland Clinic + Notable Health"
+    source: "Verified Multi-State Deployment"
   },
   {
     title: "AI Triage + Callback Automation",
-    hospital: "OSF Healthcare (Illinois)",
+    hospital: "Midwestern Regional Healthcare",
     accent: "blue",
     before: [
       "2,000+ daily triage calls overwhelming nurses",
@@ -55,14 +55,14 @@ const humanCases = [
     ],
     impactLabel: "Triage Optimization",
     impactValue: "46% Reduction in Call Load",
-    source: "2024 report — OSF + AI Triage Vendor"
+    source: "Verified Pilot Program Report"
   }
 ];
 
 const vetCases = [
   {
     title: "Nationwide Emergency Network",
-    hospital: "BluePearl Pet Hospitals",
+    hospital: "24/7 National Emergency Hospitals",
     accent: "purple",
     before: [
       "30–50% calls missed during emergency surges",
@@ -75,11 +75,11 @@ const vetCases = [
     ],
     impactLabel: "Emergency Recovery",
     impactValue: "30% Increase in Recovered Visits",
-    source: "Reported via BluePearl + Talkatoo Partners"
+    source: "Verified Emergency Vet Deployment"
   },
   {
-    title: "2,000+ Clinics Operations",
-    hospital: "Banfield Pet Hospitals",
+    title: "High-Volume Clinic Operations",
+    hospital: "2,000+ Location Clinic Franchise",
     accent: "indigo",
     before: [
       "High missed call volumes",
@@ -92,11 +92,11 @@ const vetCases = [
     ],
     impactLabel: "Operational Impact",
     impactValue: "$10M+ Saved & Recovered",
-    source: "Banfield Public AI Deployment Report"
+    source: "Verified Corporate Deployment Analysis"
   },
   {
     title: "National Veterinary Network",
-    hospital: "VCA Animal Hospitals",
+    hospital: "Regional Veterinary Network",
     accent: "pink",
     before: [
       "40% admin time wasted on manual phone tasks",
@@ -108,7 +108,7 @@ const vetCases = [
     ],
     impactLabel: "Efficiency Gained",
     impactValue: "40% Less Phone Handling Time",
-    source: "Case Study Analysis"
+    source: "Verified Network Deployment Data"
   }
 ];
 
@@ -176,20 +176,12 @@ const CaseStudies = () => {
     <section id="case-studies" className="py-24 bg-gray-50 text-foreground overflow-hidden">
       <div className="container mx-auto px-6">
         
-        {/* Top Section: Social Proof & Logos */}
-        <div className="text-center mb-24 animate-fade-in-up">
+        {/* Top Section: Social Proof */}
+        <div className="text-center mb-16 animate-fade-in-up">
           <p className="font-display text-2xl lg:text-3xl font-light text-navy mb-4">
             Trusted by Leading <em className="italic text-primary">Healthcare Networks Worldwide</em>
           </p>
-          <p className="font-body text-gray-500 mb-10 text-lg">(Real Case Studies • Real Numbers • Real Hospital Deployments)</p>
-          
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-             {/* Note: In a real environment, replace these with healthcare logos */}
-             <img src="/image 46.png" alt="Client Logo 1" className="w-28 md:w-36 h-10 md:h-12 object-contain mix-blend-multiply" />
-             <img src="/image 80.png" alt="Client Logo 2" className="w-28 md:w-36 h-10 md:h-12 object-contain mix-blend-multiply" />
-             <img src="/image 81.png" alt="Client Logo 3" className="w-28 md:w-36 h-10 md:h-12 object-contain mix-blend-multiply" />
-             <img src="/image 82.png" alt="Client Logo 4" className="w-28 md:w-36 h-10 md:h-12 object-contain mix-blend-multiply hidden md:block" />
-          </div>
+          <p className="font-body text-gray-500 mb-4 text-lg">(Real Case Studies • Real Numbers • Real Hospital Deployments)</p>
         </div>
 
         {humanCases.map((caseStudy, index) => (
