@@ -38,12 +38,12 @@ const Hero = () => {
           </h1>
 
           {/* Subheadline (USP & Pain Points) */}
-          <p className="font-body text-foreground/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto font-light">
-            Hospitals miss <strong>35–60% of all inbound patient calls</strong>
-            —and each one is a high-intent patient. Your Revenue Recovery Grid™
+          <p className="font-body text-foreground/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto font-light mt-8">
+            Hospitals miss <strong>35–60% of all inbound patient calls</strong>{" "}
+            and each one is a high-intent patient. Your Revenue Recovery Grid™
             ensures every call is answered instantly, bookings happen
             automatically, and your CRM/HMS is updated without human
-            error—without hiring more staff or relying on robotic IVRs.
+            error without hiring more staff or relying on robotic IVRs.
           </p>
 
           <div className="flex justify-center">
