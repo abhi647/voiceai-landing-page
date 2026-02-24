@@ -36,9 +36,9 @@ export const VoiceCallButton = () => {
       }
       setToken(data.token);
       setServerUrl(data.url);
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      alert("Please configure the backend .env file correctly with LiveKit credentials.");
+      alert(`Connection Error: ${err.message || "Unknown error"}. If on Vercel, this is likely a 'Mixed Content' block (HTTPS calling HTTP).`);
     } finally {
       setIsFetching(false);
     }
