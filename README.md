@@ -60,9 +60,15 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## 🚀 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+For detailed instructions on how to deploy this project (Frontend on **Vercel** and Backend on **Azure VM**), please refer to the [DEPLOYMENT.md](./DEPLOYMENT.md) guide.
+
+## 🛠️ Backend Features
+
+- **Real-time Voice AI**: Powered by LiveKit, Groq (LLM), and ElevenLabs (TTS).
+- **Token Server**: FastAPI backend for secure LiveKit room access.
+- **Low Latency**: Optimized for fast voice interactions.
 
 ## Can I connect a custom domain to my Lovable project?
 
