@@ -98,8 +98,10 @@ const ConnectedCallButton = ({ onEndCall, audioRef }: { onEndCall: () => void, a
   const [time, setTime] = useState(0);
 
   useEffect(() => {
+    console.log("LiveKit Connection State:", connectionState);
     let interval: NodeJS.Timeout;
     if (connectionState === ConnectionState.Connected) {
+      console.log("Successfully connected to LiveKit room!");
       interval = setInterval(() => {
         setTime((prev) => prev + 1);
       }, 1000);
@@ -107,9 +109,14 @@ const ConnectedCallButton = ({ onEndCall, audioRef }: { onEndCall: () => void, a
       // Play ambient background noise when fully connected
       if (audioRef.current) {
         audioRef.current.volume = 0.45;
-        audioRef.current.play().catch(console.error);
+        audioRef.current.play().then(() => {
+          console.log("Background noise playing");
+        }).catch(err => {
+          console.error("Background noise failed to play:", err);
+        });
       }
-    } else {
+    } else if (connectionState === ConnectionState.Disconnected) {
+      console.log("Disconnected from LiveKit");
       setTime(0);
       if (audioRef.current) {
         audioRef.current.pause();
