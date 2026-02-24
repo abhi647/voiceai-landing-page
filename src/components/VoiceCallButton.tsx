@@ -21,7 +21,8 @@ export const VoiceCallButton = () => {
 
     try {
       setIsFetching(true);
-      const response = await fetch("http://localhost:8001/api/get-token", {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8001";
+      const response = await fetch(`${backendUrl}/api/get-token`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
