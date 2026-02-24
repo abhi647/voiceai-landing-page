@@ -21,7 +21,7 @@ export const VoiceCallButton = () => {
 
     try {
       setIsFetching(true);
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://20.198.23.167:8001";
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || "";
       const response = await fetch(`${backendUrl}/api/get-token`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
