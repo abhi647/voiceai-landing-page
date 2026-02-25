@@ -139,7 +139,7 @@ const WhyUs = () => {
                         to="/apply"
                         className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-primary text-white font-body font-semibold text-xl hover:scale-105 transition-all duration-300 shadow-xl shadow-teal-500/20"
                     >
-                        Book Your Revenue Recovery Report
+                        Book 1:1 strategy call
                         <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </div>

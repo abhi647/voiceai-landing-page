@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#case-studies" className="font-body text-sm text-slate-400 hover:text-teal-400 transition-colors">Case Studies</a></li>
               <li><a href="#why-us" className="font-body text-sm text-slate-400 hover:text-teal-400 transition-colors">Why Us</a></li>
-              <li><Link to="/apply" className="font-body text-sm text-slate-400 hover:text-teal-400 transition-colors">Book Strategy Call</Link></li>
+              <li><Link to="/apply" className="font-body text-sm text-slate-400 hover:text-teal-400 transition-colors">Book 1:1 strategy call</Link></li>
             </ul>
           </div>
 
@@ -29,9 +29,9 @@ const Footer = () => {
             <p className="font-body text-slate-400 text-sm mb-6">Claim your free 45-minute FMCG Decision Engine™ strategy session.</p>
             <Link
               to="/apply"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-teal-500/10 to-cyan-600/10 border border-teal-500/50 text-teal-400 font-body text-sm font-bold hover:bg-teal-500 hover:text-white transition-all shadow-lg"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white font-body text-sm font-bold hover:scale-105 transition-all shadow-lg"
             >
-              Book Free Call
+              Book 1:1 strategy call
               <ArrowRight size={16} />
             </Link>
           </div>

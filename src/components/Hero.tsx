@@ -28,22 +28,18 @@ const Hero = () => {
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-navy mb-6 tracking-tight">
             Recover{" "}
             <em className="italic text-primary font-light">
-              20–35% Additional
+              20–35% extra
             </em>{" "}
-            Monthly
+            monthly
             <br className="hidden lg:block" />
             <em className="italic text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-500 font-light tracking-normal">
-              Patient Revenue in 15 Days
+              patient revenue in 15 days
             </em>
           </h1>
 
           {/* Subheadline (USP & Pain Points) */}
           <p className="font-body text-foreground/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto font-light mt-8">
-            Hospitals miss <strong>35–60% of all inbound patient calls</strong>{" "}
-            and each one is a high-intent patient. Your Revenue Recovery Grid™
-            ensures every call is answered instantly, bookings happen
-            automatically, and your CRM/HMS is updated without human
-            error without hiring more staff or relying on robotic IVRs.
+            by instantly answering and booking every new patient call.
           </p>
 
           <div className="flex justify-center">
@@ -52,7 +48,7 @@ const Hero = () => {
               to="/apply"
               className="w-full md:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-primary text-white font-body font-semibold text-xl hover:scale-105 transition-all duration-300 shadow-xl shadow-teal-500/20"
             >
-              Book Your Free 1:1 Strategy Session
+              Book 1:1 strategy call
               <ArrowRight
                 size={22}
                 className="group-hover:translate-x-1 transition-transform"
@@ -116,12 +112,13 @@ const Hero = () => {
           className="text-center mt-12 animate-fade-in-up"
           style={{ animationDelay: "0.5s" }}
         >
-          <Link
-            to="/apply"
-            className="inline-flex items-center justify-center text-primary hover:text-teal-700 font-semibold underline underline-offset-4 transition-all"
-          >
-            Claim your 1:1 session today
-          </Link>
+            <Link
+              to="/apply"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary text-white font-body font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-teal-500/20"
+            >
+              Book 1:1 strategy call
+              <ArrowRight size={20} />
+            </Link>
         </div>
       </div>
     </section>

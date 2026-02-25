@@ -8,12 +8,6 @@ from livekit.plugins import silero, groq, elevenlabs
 
 load_dotenv()
 
-from livekit.agents import AutoSubscribe, JobContext, JobProcess, JobRequest, WorkerOptions, cli, llm
-from livekit.agents.voice import Agent, AgentSession
-from livekit.plugins import silero, groq, elevenlabs
-
-load_dotenv()
-
 async def entrypoint(ctx: JobContext):
     # Read the instructions document
     instructions_path = os.path.join(os.path.dirname(__file__), "instructions.txt")

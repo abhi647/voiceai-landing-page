@@ -24,7 +24,7 @@ const Navbar = () => {
               to="/apply"
               className="inline-flex items-center px-6 py-2.5 rounded-full bg-primary text-white font-body text-sm font-semibold hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow"
             >
-              Book Free Strategy Call
+              Book 1:1 strategy call
             </Link>
           </div>
         </nav>
@@ -48,7 +48,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-primary text-white font-body text-base font-bold shadow-sm"
               onClick={() => setMobileOpen(false)}
             >
-              Book Free Strategy Call
+              Book 1:1 strategy call
             </Link>
           </div>
         </div>
