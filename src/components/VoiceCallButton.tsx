@@ -35,15 +35,24 @@ export const VoiceCallButton = () => {
           participantName: "User"
         })
       });
-      const data = await response.json();
+
+      console.log(`Fetch response status: ${response.status} (${response.statusText})`);
+
       if (!response.ok) {
-        throw new Error(data.detail || "Failed to fetch token");
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.detail || `Server returned ${response.status}: ${response.statusText}`);
       }
+
+      const data = await response.json();
       setToken(data.token);
       setServerUrl(data.url);
     } catch (err: any) {
-      console.error(err);
-      alert(`Connection Error: ${err.message || "Unknown error"}. If on Vercel, this is likely a 'Mixed Content' block (HTTPS calling HTTP).`);
+      console.error("Voice connection error details:", err);
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || "";
+      const isProd = import.meta.env.PROD;
+      const endpoint = isProd ? "/api/get-token" : `${backendUrl}/api/get-token`;
+      
+      alert(`Voice Connection Failed!\n\nURL: ${endpoint}\nError: ${err.message}\n\nTroubleshooting:\n1. Ensure the backend VM is running.\n2. Verify the IP in vercel.json is correct.\n3. Check backend logs on the VM.`);
     } finally {
       setIsFetching(false);
     }
