@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Apply from "./pages/Apply";
 import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
+import FacebookPixel from "./components/FacebookPixel";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <FacebookPixel />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/apply" element={<Apply />} />

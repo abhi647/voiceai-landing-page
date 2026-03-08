@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { CheckCircle2, Calendar, Wifi, VolumeX, Clock, Laptop } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -27,6 +28,16 @@ const steps = [
 ];
 
 const ThankYou = () => {
+  useEffect(() => {
+    // Track conversion event for strategy session bookings
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "Lead", {
+        content_name: "Strategy Session Booking",
+        status: "Confirmed"
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
