@@ -21,8 +21,13 @@ export const VoiceCallButton = () => {
 
     try {
       setIsFetching(true);
+      // Use relative URL to leverage Vercel rewrites (avoids Mixed Content issues)
+      // Fallback to VITE_BACKEND_URL for local development if needed
       const backendUrl = import.meta.env.VITE_BACKEND_URL || "";
-      const response = await fetch(`${backendUrl}/api/get-token`, {
+      const isProd = import.meta.env.PROD;
+      const endpoint = isProd ? "/api/get-token" : `${backendUrl}/api/get-token`;
+
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
